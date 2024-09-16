@@ -7,7 +7,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Loader from "./Pages/Loader";
 import Carousel from "./Components/Carousel";
-import ImageSlider from "./Pages/HomePage";
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,6 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Carousel/>
-     
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/article/:id" element={<ArticlePage/>} />

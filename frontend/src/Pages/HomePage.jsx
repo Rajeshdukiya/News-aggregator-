@@ -17,7 +17,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
-  return <IconButton {...other} />;
+  return <IconButton {...other}/>;
 })(({ theme }) => ({
   marginLeft: 'auto',
   transition: theme.transitions.create('transform', {
@@ -88,7 +88,7 @@ export default function RecipeReviewCard() {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <ExpandMoreIcon/>
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>

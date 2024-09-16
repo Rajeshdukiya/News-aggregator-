@@ -35,7 +35,7 @@ const Carousel = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '100vh', // Full height of the viewport
+        minHeight: '100vh',
       }}
     >
       <Box sx={{ width:'2500px', height: '450px', position: 'relative', overflow: 'hidden' }}>
