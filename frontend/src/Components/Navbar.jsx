@@ -242,7 +242,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            <img src="/newslogo" alt="logo" />
+         <img src="/Components/Newslogo.jpg" alt="logo"/>
           </Typography>
           <Search>
             <SearchIconWrapper>

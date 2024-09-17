@@ -17,8 +17,10 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar/>
-      <Breadcrumb/>z
+      <Breadcrumb/>
       <Carousel/>
+     
+      
      
       <Routes>
         <Route path="/" element={<HomePage/>}/>
