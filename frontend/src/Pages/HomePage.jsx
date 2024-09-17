@@ -48,24 +48,11 @@ export default function RecipeReviewCard() {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      />
+  
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
+        image="https://as1.ftcdn.net/v2/jpg/01/81/29/10/1000_F_181291008_LZt2rWWrmUtX7e1bUIzAfczyFRtdykS9.jpg"
         alt="Paella dish"
       />
       <CardContent>
