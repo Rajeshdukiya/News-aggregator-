@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Loader from "./Pages/Loader";
 import Carousel from "./Components/Carousel";
+import Breadcrumb from "./Components/Breadcrumb"
 
 
 
@@ -16,7 +17,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar/>
+      <Breadcrumb/>z
       <Carousel/>
+     
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/article/:id" element={<ArticlePage/>} />

@@ -18,7 +18,7 @@ const Carousel = () => {
     setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
       setChecked(true);
-    }, 300); // Slightly less than Slide transition duration
+    }, 300); 
   };
 
   const handlePrev = () => {
@@ -36,9 +36,10 @@ const Carousel = () => {
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: '100vh',
+        overflow: 'hidden',
       }}
     >
-      <Box sx={{ width:'2500px', height: '450px', position: 'relative', overflow: 'hidden' }}>
+      <Box sx={{ width: '1', height: '450px', position: 'relative', overflow: 'hidden' }}>
         {images.map((image, index) => (
           <Slide
             key={index}
