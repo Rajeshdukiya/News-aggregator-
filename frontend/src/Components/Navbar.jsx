@@ -246,7 +246,7 @@ export default function PrimarySearchAppBar() {
           </Typography>
           <Search>
             <SearchIconWrapper>
-              <SearchIcon />
+             <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
