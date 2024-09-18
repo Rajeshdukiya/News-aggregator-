@@ -13,8 +13,7 @@ function handleClick(event) {
 
 export default function IconBreadcrumbs() {
   return (
-    <div role="presentation" onClick={handleClick}
-    >
+    <div role="presentation" onClick={handleClick}>
       <Breadcrumbs aria-label="breadcrumb">
         <Link
           underline="hover"

@@ -218,7 +218,7 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, marginBottom:"100px" }}>
       <AppBar position="absolute" sx={{
         backgroundColor: 'rgba(255, 255, 255, 0.2)',
         borderBottom: '1px solid white',
