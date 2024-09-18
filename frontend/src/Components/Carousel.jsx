@@ -37,7 +37,7 @@ const Carousel = () => {
         alignItems: 'center',
         minHeight: '100vh',
         overflow: 'hidden',
-        marginTop:'1%'
+     
       }}
     >
       <Box sx={{ width: '1', height: '450px', position: 'relative', overflow: 'hidden' }}>
