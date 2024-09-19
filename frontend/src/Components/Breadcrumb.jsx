@@ -14,12 +14,7 @@ function handleClick(event) {
 
 export default function IconBreadcrumbs() {
   return (
-<<<<<<< HEAD
-    <div role="presentation" onClick={handleClick} sx={{marginTop:'300px'}}
-    >
-=======
     <div role="presentation" onClick={handleClick}>
->>>>>>> 00e3cf0c492d47f8401b34e46de65257688ede76
       <Breadcrumbs aria-label="breadcrumb">
         <Link
           underline="hover"
