@@ -5,8 +5,8 @@ import 'dotenv'
 import cookieParser from 'cookie-parser'
 
 
-// import newsRouter from './Routes/news.route.js'
-// import userRouter from './Routes/user.route.js'
+import favouriteRouter from './Routes/favourite.route.js'
+import userRouter from './Routes/user.route.js'
 const app = express();
 
 app.use(cookieParser());
@@ -23,7 +23,7 @@ mongoose.connect("")
         })
 
         app.use('/backend/user', userRouter)
-        app.use('/backend/news', newsRouter)
+        app.use('/backend/favourite', favouriteRouter)
         
 
         app.use((err, req, res, next) => {
