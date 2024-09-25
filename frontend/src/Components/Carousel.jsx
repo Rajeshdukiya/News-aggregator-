@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Slide, Box, IconButton } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { useLocation } from 'react-router-dom';
 
 const images = [
   'https://via.placeholder.com/800x400?text=Image+1',
@@ -11,7 +12,9 @@ const images = [
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(true);  
+  const router = useLocation()
+  console.log(location)
 
   const handleNext = () => {
     setChecked(false);
@@ -28,6 +31,8 @@ const Carousel = () => {
       setChecked(true);
     }, 300);
   };
+
+  if(location.pathname=="/sign-in" ||location.pathname=="/sign-up" ) return null;
 
   return (
     <Box

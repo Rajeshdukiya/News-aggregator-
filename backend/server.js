@@ -1,18 +1,19 @@
 import express from "express"
 import mongoose from "mongoose"
 import cors from 'cors'
-import 'dotenv/config.js'
+import 'dotenv'
 import cookieParser from 'cookie-parser'
 
-import newsRouter from './Routes/news.route.js'
-import userRouter from './Routes/user.route.js'
+
+// import newsRouter from './Routes/news.route.js'
+// import userRouter from './Routes/user.route.js'
 const app = express();
 
 app.use(cookieParser());
 app.use(express.json())
 app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
 
-mongoose.connect(process.env.MONGO)
+mongoose.connect("mongodb+srv://priyanshijain664:jain2004@news.bm240.mongodb.net/?retryWrites=true&w=majority&appName=News")
     .then(() => {
         console.log("Connected to MongoDB!!");
         console.log("Starting the server now.")

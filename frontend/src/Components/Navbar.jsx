@@ -17,6 +17,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 // import MuiToggleButton from "@mui/material/ToggleButton";
 import Switch from '@mui/material/Switch';
+import { useAuth0 } from "@auth0/auth0-react";
+import { Button } from '@mui/material';
 
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -142,7 +144,8 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
+  
+ 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -217,6 +220,9 @@ export default function PrimarySearchAppBar() {
     </Menu>
   );
 
+  const LoginButton = () => {
+    const { loginWithRedirect } = useAuth0();
+  };
   return (
     <Box sx={{ flexGrow: 1, marginBottom:"100px" }}>
       <AppBar position="absolute" sx={{
@@ -242,8 +248,10 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-         <img src="/Components/Newslogo.jpg" alt="logo"/>
+         <img src="/assets/Newslogo.jpg" alt="News Logo" />
+
           </Typography>
+          
           <Search>
             <SearchIconWrapper>
              <SearchIcon />
@@ -296,10 +304,19 @@ export default function PrimarySearchAppBar() {
             </IconButton>
 
           </Box>
+          
         
           <MaterialUISwitch sx={{ m: 1 }} defaultChecked />
 
-        
+          <Button
+      variant="contained"
+      color="primary"
+      onClick={() => loginWithRedirect()}
+    >
+      Log In
+    </Button>
+  
+
 
    
         </Toolbar>
