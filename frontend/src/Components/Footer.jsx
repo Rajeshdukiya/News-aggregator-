@@ -2,7 +2,9 @@ import React from "react";
 import { Typography, Container, Link } from '@mui/material';
 
 
+
 const Footer = () => {
+  if(location.pathname=="/article" ) return null;
   return (
     <div>
     <footer className="bg-gray-900 py-6 mt-10 text-white">

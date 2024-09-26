@@ -32,7 +32,7 @@ const Carousel = () => {
     }, 300);
   };
 
-  if(location.pathname=="/sign-in" ||location.pathname=="/sign-up" ) return null;
+  if(location.pathname=="/sign-in" ||location.pathname=="/sign-up" || location.pathname =="/article") return null;
 
   return (
     <Box

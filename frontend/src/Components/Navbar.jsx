@@ -312,6 +312,8 @@ export default function PrimarySearchAppBar() {
       variant="contained"
       color="primary"
       onClick={() => loginWithRedirect()}
+      href="/sign-in"
+      
     >
       Log In
     </Button>
