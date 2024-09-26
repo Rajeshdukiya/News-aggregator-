@@ -1,6 +1,8 @@
 import { configDotenv } from "dotenv";
 import { errorHandler } from "./error.js";
-import jwt from "jwtwebtokens";
+// import jwt from "jwtwebtokens";
+import jwt from 'jsonwebtoken';
+
 
 export const verifyToken = (req,res,next)=>{
     console.log("Verifying user details: ",req.params.id)

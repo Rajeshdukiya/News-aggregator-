@@ -1,6 +1,6 @@
 import express from 'express'
-import { createfavourite } from '../controllers/favourite.controller.js';
-// import {verifyToken} from '../utils/verifyUser.js'
+import { createfavourite } from '../Controller/favourite.Controller.js';
+import {verifyToken} from '../utils/verify.js'
 
 const router = express.Router();
 
